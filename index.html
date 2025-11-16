@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imposter Word Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="setup-screen">
+    <h1>Imposter Word Game</h1>
+    <label>Number of Players: <input type="number" id="num-players" min="3" value="3"></label><br>
+    <label>Number of Imposters: <input type="number" id="num-imposters" min="1" value="1"></label><br>
+    <label>Topic:
+      <select id="topic-select">
+        <option value="animals">Animals</option>
+        <option value="food">Food</option>
+        <option value="characters">Characters</option>
+        <option value="actors">Actors</option>
+        <option value="objects">Objects</option>
+      </select>
+    </label><br>
+    <label>Enable Hints: <input type="checkbox" id="hints-toggle"></label><br>
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <div id="player-screen" style="display:none;">
+    <h2 id="player-title"></h2>
+    <p id="word-display"></p>
+    <button id="next-player">Next Player</button>
+  </div>
+
+  <div id="discussion-screen" style="display:none;">
+  <h2>Discussion / Voting Screen</h2>
+  <p>The game has ended. You can now discuss or vote for the imposter.</p>
+  <button id="play-again">Play Again</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
