@@ -25,10 +25,16 @@
   </div>
 
   <div id="player-screen" style="display:none;">
-    <h2 id="player-title"></h2>
-    <p id="word-display"></p>
-    <button id="next-player">Next Player</button>
+  <h2 id="player-title"></h2>
+
+  <div id="hidden-card">
+    <p id="word-display" style="visibility:hidden;"></p>
   </div>
+
+  <button id="hold-view">👁 Hold to View</button><br>
+  <button id="next-player" style="margin-top:15px;">Next Player</button>
+</div>
+
 
   <div id="discussion-screen" style="display:none;">
   <h2>Discussion / Voting Screen</h2>
@@ -36,6 +42,6 @@
   <button id="play-again">Play Again</button>
 </div>
 
-  <script src="script.js"></script>
+  <script src="script.min.js"></script>
 </body>
 </html>
