@@ -32,3 +32,30 @@ button {
   font-weight: bold;
   margin: 20px 0;
 }
+
+#hidden-card {
+  margin: 20px auto;
+  padding: 20px;
+  width: 280px;
+  height: 150px; /* fixed height */
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #ff7e5f;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden; /* prevents content from overflowing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#word-display {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: pre-line;
+  word-wrap: break-word;
+  overflow-y: auto; /* scroll if text is too long */
+  max-height: 100%;
+}
+
+
