@@ -11,6 +11,7 @@
     <h1>Imposter Word Game</h1>
     <label>Number of Players: <input type="number" id="num-players" min="3" value="3"></label><br>
     <label>Number of Imposters: <input type="number" id="num-imposters" min="1" value="1"></label><br>
+    
     <label>Topic:
       <select id="topic-select">
         <option value="animals">Animals</option>
@@ -20,29 +21,31 @@
         <option value="objects">Objects</option>
       </select>
     </label><br>
-    <label>Enable Hints: <input type="checkbox" id="hints-toggle"></label><br>
+    
+    <input type="checkbox" id="hints-toggle">
+    <label for="hints-toggle">Enable Hints</label>
+
     <button id="start-game">Start Game</button>
   </div>
 
   <div id="player-screen" style="display:none;">
-  <h2 id="player-title"></h2>
+    <h2 id="player-title"></h2>
 
-  <div id="hidden-card">
-    <p id="word-display" style="visibility:hidden;"></p>
+    <div id="hidden-card">
+      <p id="word-display" style="visibility:hidden;"></p>
+    </div>
+
+    <button id="hold-view">👁 Hold to View</button>
+    <button id="next-player">Next Player</button>
   </div>
-
-  <button id="hold-view">👁 Hold to View</button><br>
-  <button id="next-player" style="margin-top:15px;">Next Player</button>
-</div>
 
 
   <div id="discussion-screen" style="display:none;">
-  <h2>Discussion / Voting Screen</h2>
-  <p>The game has ended. You can now discuss or vote for the imposter.</p>
-  <button id="play-again">Play Again</button>
-</div>
+    <h2>Discussion / Voting Screen</h2>
+    <p>The game has ended. You can now discuss or vote for the imposter.</p>
+    <button id="play-again">Play Again</button>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="script.min.js"></script>
 </body>
 </html>
-
